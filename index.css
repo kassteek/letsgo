@@ -1,0 +1,212 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url(https://avatars.mds.yandex.net/i?id=8f478e03a505ca006ac58928bfdd8a79_l-5544086-images-thumbs&n=13);
+    padding-top: 100px; /* Отступ сверху, чтобы контент не перекрывал header */
+}
+
+/* Шапка */
+header {
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    z-index: 10; /* Устанавливаем шапку всегда на передний план */
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header img {
+    transform: translate(-60px, 0px);
+    position: absolute;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Секция с изображением и названием магазина */
+.usti {
+    position: relative;
+    margin-top: 30px; /* Убираем лишний отступ сверху */
+    padding: 0;
+}
+
+.store-name {
+    font-family: 'Georgia', serif; /* Элегантный шрифт */
+    font-size: 75px; /* Большой размер шрифта */
+    color: white; /* Белый цвет текста */
+    text-align: left; /* Текст выровнен слева */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Тень для улучшения читаемости */
+    letter-spacing: 1px; /* Немного увеличиваем расстояние между буквами */
+    position: absolute;
+    left: 15%; /* Сдвигаем текст влево относительно родителя */
+    top: 15%; /* Сдвигаем текст ближе к верху */
+}
+
+
+/* Секция с изображением */
+.sur {margin-left: 10%;
+    border-radius: 10px;
+    width: 80%; /* Устанавливаем ширину изображения */
+    height: auto; /* Подстраиваем высоту автоматически */
+    display: block;
+    margin-top: 30px; /* Отступ сверху, чтобы изображение не накладывалось на текст */
+}
+
+/* Секция товаров */
+.products {
+    padding: 40px 0;
+}
+
+.products .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #fcf7f0;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 9px;
+}
+
+.product-card img {
+    border-radius: 6px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.product-card button:hover {
+    background-color: #ff2b2b;
+}
+
+/* Футер */
+footer {
+    height: 80px;
+    width: 100%;
+    color: rgb(15, 14, 14);
+    padding: 20px 0;
+    margin-top: 20px; /* Добавляем небольшой отступ сверху, чтобы контент не прилипал */
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 14px;
+    color: #333; /* Темно-серый цвет для текста */
+}
+
+.rrr {
+    display: flex;
+    gap: 10px;
+}
+
+.inst {
+    width: 40px;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    background-color: #f5f5f5; /* Светло-молочный цвет по умолчанию */
+    border-radius: 5px;
+}
+
+.inst:hover {
+    background-color: #d1c6b1; /* Темно-молочный цвет при наведении */
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.korzz {
+    margin-left: 28px;
+}
+
+.products img:hover {
+    border: 0.1px solid #000000;
+}
+
+.ttt {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.store-name{animation: pulse 1.5s infinite; /* анимация пульса */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
